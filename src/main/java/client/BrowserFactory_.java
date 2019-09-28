@@ -2,7 +2,7 @@ package client;
 
 import org.openqa.selenium.WebDriver;
 
-public class BrowserFactory {
+public class BrowserFactory_ {
 	public IBrowserFactory ibf;
 	
 	/*
