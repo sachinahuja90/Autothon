@@ -745,4 +745,10 @@ public class GUIKeyword {
 		}
 		return chldList;
 	}
+	
+	public static void selectDropDownValue(WebElement dropDownWebElement, String textToSelect) 
+	{
+		Select dropDown = new Select(dropDownWebElement);
+		dropDown.selectByVisibleText(textToSelect);
+	}
 }
