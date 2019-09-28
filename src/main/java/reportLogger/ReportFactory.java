@@ -156,4 +156,12 @@ public class ReportFactory {
 		ReportFactory.getInstance().info("Testcase Description : " + result.getMethod().getDescription());
 	}
 
+	/*
+	 * Function Decription - Function will log error message on Logger file Created
+	 * by - Sachin Ahuja Created on - 13th April Modified by Modified on
+	 */
+	public final void debug(String msg) {
+		LOGGER.debug(msg);
+
+	}
 }
