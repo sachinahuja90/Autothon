@@ -22,10 +22,7 @@ public class RestAssuredRequest {
 		   	payload.httpRequest.params(payload.params);
 		   	payload.httpRequest.queryParams(payload.qParams);
 		   	
-		   	if(payload.authorizationType=="oauth") {
-//		   		payload.httpRequest.auth().
-//				oauth(PropertyReader.propertyMap.get("ConsumerKey"), PropertyReader.propertyMap.get("ConsumerSecret"), PropertyReader.propertyMap.get("Token"), PropertyReader.propertyMap.get("TokenSecret"));
-		   	}
+		   	
 		   	
 		   	ReportFactory.getInstance().info("Rest request end point: "+RestAssured.baseURI+payload.resource);
 			

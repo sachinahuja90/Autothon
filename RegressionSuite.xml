@@ -9,19 +9,9 @@
 
 	<!-- Run test method on group "selenium" only -->
 	<test name="selenium">
-<!-- 
-		<groups>
-			<run>
-				<include name="searchtext" />
-				<include name="SignUp" />
-				<include name="Login" />
-				<include name="Home" />
-			</run>
-		</groups>
-
 		<classes>
-			<class name="com.nag.nagp.testcases.Test_AmazonApp" />
+			<class name="apiTest.TestAPI.java" />
 		</classes>
- -->
+
 	</test>
 </suite> <!-- Suite -->
