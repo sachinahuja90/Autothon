@@ -170,7 +170,7 @@
                 <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-            			<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>            			
+            			<suiteXmlFile>RegressionSuite.xml</suiteXmlFile>            			
 			        </suiteXmlFiles>			        
                 </configuration>
             </plugin>

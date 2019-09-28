@@ -125,5 +125,29 @@ public class ExcelReader{
         cellIterator=null;
 		return rowData;
 	}
+	
+
+	/* Function Decription - Function will read Excel file, path provided in parameter and feed the Data provider    
+	 * Created by - Sachin Ahuja
+	 * Modified by
+	 * Modified on
+	 * */
+	public static Object[][] excelDataProvider(String filePath,int sheetIndex) throws FileNotFoundException, IOException, IncorrectFileExtensionException {
+		
+		ArrayList<ArrayList<String>> excelList=ExcelReader.excelReader(filePath,sheetIndex);
+		Object[][] obj = new Object[excelList.size()][2];
+		int i=0;
+		for(ArrayList<String> excelRow:excelList) {
+			for(int j=0;j<excelRow.size();j++) {
+				obj[i][0]=ExcelReader.headers;
+				obj[i][1]=excelRow;			
+			}
+			i++;
+		}
+		return obj;
+	}
+	
+	
+	
 
 }

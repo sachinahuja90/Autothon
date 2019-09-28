@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+
+	<listeners>
+		<listener
+			class-name="testListner.TestListener" />
+	</listeners>
+
+	<!-- Run test method on group "selenium" only -->
+	<test name="selenium">
+<!-- 
+		<groups>
+			<run>
+				<include name="searchtext" />
+				<include name="SignUp" />
+				<include name="Login" />
+				<include name="Home" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.nag.nagp.testcases.Test_AmazonApp" />
+		</classes>
+ -->
+	</test>
+</suite> <!-- Suite -->
